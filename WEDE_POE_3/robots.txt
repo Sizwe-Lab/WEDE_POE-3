@@ -1,0 +1,8 @@
+# robots.txt for Toronto Cupcake
+# Tells search engine crawlers which parts of the site they may index.
+User-agent: *
+Allow: /
+Disallow: /vendor/
+
+# Replace the domain below with your live site address (see README).
+Sitemap: https://YOUR-SITE.netlify.app/sitemap.xml

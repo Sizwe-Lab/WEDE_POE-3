@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a Cupcake Quote for Weddings &amp; Events | Toronto Cupcake</title>
+    <meta name="description" content="Get an instant cupcake price estimate and availability check for weddings, birthdays and corporate events from Toronto Cupcake. Quote in seconds." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#3B2318" />
+    <link rel="canonical" href="https://YOUR-SITE.netlify.app/enquiry.html" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23F2C9C2'/%3E%3Ctext x='50' y='64' font-size='42' font-family='Arial' font-weight='700' text-anchor='middle' fill='%233B2318'%3ETC%3C/text%3E%3C/svg%3E" />
+
+    <!-- Open Graph / Twitter: controls how links look when shared -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Toronto Cupcake" />
+    <meta property="og:title" content="Request a Cupcake Quote for Weddings &amp; Events | Toronto Cupcake" />
+    <meta property="og:description" content="Get an instant cupcake price estimate and availability check for weddings, birthdays and corporate events from Toronto Cupcake. Quote in seconds." />
+    <meta property="og:url" content="https://YOUR-SITE.netlify.app/enquiry.html" />
+    <meta property="og:image" content="https://YOUR-SITE.netlify.app/images/Gift-boxes.webp" />
+    <meta property="og:locale" content="en_CA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Request a Cupcake Quote for Weddings &amp; Events | Toronto Cupcake" />
+    <meta name="twitter:description" content="Get an instant cupcake price estimate and availability check for weddings, birthdays and corporate events from Toronto Cupcake. Quote in seconds." />
+    <meta name="twitter:image" content="https://YOUR-SITE.netlify.app/images/Gift-boxes.webp" />
+
+    <!-- Security: limit where scripts, styles, images and forms may load from / send to -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://tile.openstreetmap.org; connect-src 'self' https://formspree.io; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto: https://formspree.io" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body data-page="enquiry.html">
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- Header with brand logo and main navigation -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand" aria-label="Toronto Cupcake home">
+          <span class="brand-mark">TC</span>
+          <span class="brand-text">Toronto Cupcake</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          Menu
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="products.html">Products</a></li>
+            <li><a class="nav-link" href="enquiry.html">Enquiry</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Enquiry form for quote requests and custom order messages -->
+      <section class="page-hero">
+        <div class="container narrow-container">
+          <p class="eyebrow">Custom orders</p>
+          <h1>Request a Quote / Place an Enquiry</h1>
+          <p class="lead">Tell us what you need and we will show an estimated cost and availability straight away.</p>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <div class="container form-wrapper">
+          <form id="enquiry-form" class="styled-form" action="https://formspree.io/f/YOUR_FORM_ID" method="post" novalidate>
+            <p class="form-summary" role="alert" hidden></p>
+            <p class="form-error" role="alert" hidden></p>
+
+            <div class="form-field">
+              <label for="full-name">Full Name</label>
+              <input id="full-name" name="full-name" type="text" required minlength="2" maxlength="60" autocomplete="name" data-validate="name" />
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required maxlength="254" autocomplete="email" data-validate="email" />
+              </div>
+
+              <div class="form-field">
+                <label for="phone">Phone Number <span class="optional">(optional)</span></label>
+                <input id="phone" name="phone" type="tel" inputmode="tel" maxlength="20" autocomplete="tel" placeholder="(416) 555-0147" pattern="\+?[0-9 \(\)\.\-]{10,20}" data-validate="phone" />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-field">
+                <label for="order-type">Event Type / Order Type</label>
+                <select id="order-type" name="order-type" required data-validate="select" data-label="an event type">
+                  <option value="">Please select</option>
+                  <option value="Birthday">Birthday</option>
+                  <option value="Wedding">Wedding</option>
+                  <option value="Corporate Event">Corporate Event</option>
+                  <option value="Custom Order">Custom Order</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="product">Product</label>
+                <select id="product" name="product" required data-validate="select" data-label="a product">
+                  <option value="">Please select</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-field">
+                <label for="quantity">Quantity</label>
+                <input id="quantity" name="quantity" type="number" inputmode="numeric" min="1" max="500" step="1" required data-validate="quantity" />
+              </div>
+
+              <div class="form-field">
+                <label for="event-date">Date Needed</label>
+                <input id="event-date" name="event-date" type="date" required data-validate="date" />
+                <p class="field-hint">We are open Monday to Saturday and need at least 2 days&rsquo; notice.</p>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message / Order Details</label>
+              <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000" data-validate="message"></textarea>
+              <p class="char-count" id="message-count" aria-hidden="true">0 / 1000</p>
+            </div>
+
+            <!-- Honeypot: real visitors never see or fill this field -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="website">Leave this field empty</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <button type="submit" class="button button-primary">Send Enquiry</button>
+          </form>
+
+          <section id="enquiry-response" class="enquiry-response" tabindex="-1" aria-live="polite" aria-label="Enquiry response" hidden></section>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer with company information and quick links -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-heading">Toronto Cupcake</p>
+          <p>Premium cupcakes and gifting experiences for every celebration.</p>
+        </div>
+
+        <div>
+          <p class="footer-subheading">Quick links</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-subheading">Follow us</p>
+          <ul class="social-links">
+            <li><a href="#" aria-label="Toronto Cupcake on Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="Toronto Cupcake on Facebook">Facebook</a></li>
+            <li><a href="#" aria-label="Toronto Cupcake on Pinterest">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Toronto Cupcake. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
